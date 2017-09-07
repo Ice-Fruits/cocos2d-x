@@ -1439,7 +1439,7 @@ long FileUtils::getFileSize(const std::string &filepath)
 std::vector<std::string> FileUtils::listFiles(const std::string& dirPath) const
 {
     std::vector<std::string> files;
-    std::string fullpath = fullPathForFilename(dirPath);
+    std::string fullpath = dirPath;
     if (isDirectoryExist(fullpath))
     {
         tinydir_dir dir;
